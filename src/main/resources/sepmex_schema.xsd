@@ -1,0 +1,116 @@
+<xsd:schema targetNamespace="NewDataSet"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:sqltypes="http://schemas.microsoft.com/sqlserver/2004/sqltypes" elementFormDefault="qualified">
+    <xsd:import namespace="http://schemas.microsoft.com/sqlserver/2004/sqltypes" schemaLocation="http://schemas.microsoft.com/sqlserver/2004/sqltypes/sqltypes.xsd"/>
+    <xsd:element name="table">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="d_codigo" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="3082" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth">
+                            <xsd:maxLength value="5"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="d_asenta" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="3082" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth">
+                            <xsd:maxLength value="60"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="d_tipo_asenta" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="3082" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth">
+                            <xsd:maxLength value="40"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="D_mnpio" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="3082" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth">
+                            <xsd:maxLength value="50"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="d_estado" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="3082" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth">
+                            <xsd:maxLength value="35"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="d_ciudad" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="3082" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth">
+                            <xsd:maxLength value="50"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="d_CP" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="3082" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth">
+                            <xsd:maxLength value="5"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="c_estado" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="3082" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth">
+                            <xsd:maxLength value="2"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="c_oficina" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="3082" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth">
+                            <xsd:maxLength value="5"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="c_CP" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="3082" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth">
+                            <xsd:maxLength value="5"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="c_tipo_asenta" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="3082" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth">
+                            <xsd:maxLength value="2"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="c_mnpio" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="3082" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth">
+                            <xsd:maxLength value="3"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="id_asenta_cpcons" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="3082" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth">
+                            <xsd:maxLength value="4"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="d_zona" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="3082" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth">
+                            <xsd:maxLength value="40"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="c_cve_ciudad" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="sqltypes:nvarchar" sqltypes:localeId="3082" sqltypes:sqlCompareOptions="IgnoreCase IgnoreKanaType IgnoreWidth">
+                            <xsd:maxLength value="2"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
